@@ -61,3 +61,7 @@
 @can('view_users')
     <x-nav.link route="backend.tables.index" icon="fas fa-users" wire:navigate>Tables</x-nav.link>
 @endcan
+
+@can('view_users')
+    <x-nav.link route="backend.reservations.index" icon="fas fa-users" wire:navigate>Reservations</x-nav.link>
+@endcan
