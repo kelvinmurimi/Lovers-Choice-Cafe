@@ -48,6 +48,7 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
     });
     require __DIR__.'/Categories.php';
     require __DIR__.'/Menus.php';
+    require __DIR__.'/Tables.php';
 });
 
 require __DIR__.'/auth.php';
