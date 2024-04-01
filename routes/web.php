@@ -23,8 +23,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 //for middleware verified 'verified' after auth
-
-Route::get('/', WelcomeController::class);
+require __DIR__.'/Frontend.php';
+//Route::get('/', WelcomeController::class);
 
 Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCheckMiddleware'])->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
