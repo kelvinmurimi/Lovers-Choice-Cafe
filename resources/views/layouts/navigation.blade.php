@@ -63,5 +63,5 @@
 @endcan
 
 @can('view_users')
-    <x-nav.link route="backend.reservations.index" icon="fas fa-users" wire:navigate>Reservations</x-nav.link>
+    <x-nav.link route="backend.orders.index" icon="fas fa-users" wire:navigate>Orders</x-nav.link>
 @endcan

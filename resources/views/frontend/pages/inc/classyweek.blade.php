@@ -46,6 +46,12 @@
                                                         <img src="{{ Storage::url($menu->image) }}" alt="">
                                                         <h4>{{ $menu->name }}</h4>
                                                         <p>{{ $menu->description }}</p>
+                                                        <form action="{{ route('cart',$menu->id) }}" method="post">
+                                                            @csrf
+                                                            <label for="">Quantity</label>
+                                                            <input type="number" name="quantity" value="1" min="1">
+                                                            <input type="submit" value="make Order" class="btn btn-primary">
+                                                        </form>
                                                         <div class="price">
                                                             <h6>Ksh{{ $menu->price }}</h6>
                                                         </div>
@@ -66,8 +72,14 @@
                                                         <img src="{{ Storage::url($menu->image) }}" alt="">
                                                         <h4>{{ $menu->name }}</h4>
                                                         <p>{{ $menu->description }}</p>
+                                                        <form action="{{ route('cart',$menu->id) }}" method="post">
+                                                            @csrf
+                                                            <label for="">Quantity</label>
+                                                            <input type="number" name="quantity" value="1" min="1">
+                                                            <input type="submit" value="make Order" class="btn btn-primary">
+                                                        </form>
                                                         <div class="price">
-                                                            <h6>$6.50</h6>
+                                                            <h6><span>Ksh</span>{{ $menu->price }}</h6>
                                                         </div>
                                                     </div>
                                                 </div>
