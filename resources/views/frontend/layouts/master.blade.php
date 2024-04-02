@@ -59,7 +59,7 @@ https://templatemo.com/tm-558-klassy-cafe
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#about">Cashiers</a></li>
                            	
                         <!-- 
                             <li class="submenu">
@@ -74,10 +74,15 @@ https://templatemo.com/tm-558-klassy-cafe
                             <li class="scroll-to-section"><a href="#offers">Menu</a></li>
                             <li class="scroll-to-section"><a href="#chefs">Chefs</a></li> 
                             <li class="submenu">
+
+                                <a href="javascript:;">Orders</a>
+                                <ul>
+                                    <li><a href="#"></a></
                                 <a href="javascript:;">Account </a>
                                 <ul>
                                     <li><a href="{{ route('login') }}">Login</a></li>
                                     <li><a href="{{ route('register') }}">Register</a></li>
+
                                     
                                 </ul>
                             </li>
@@ -120,7 +125,7 @@ https://templatemo.com/tm-558-klassy-cafe
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright Klassy Cafe Co.
+                        <p>© Copyright Atalanta Cafe Management.
                         
                         <br>Design: TemplateMo</p>
                     </div>
